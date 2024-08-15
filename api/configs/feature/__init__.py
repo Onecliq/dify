@@ -211,7 +211,7 @@ class ModelLoadBalanceConfig(BaseSettings):
     """
     MODEL_LB_ENABLED: bool = Field(
         description='whether to enable model load balancing',
-        default=False,
+        default=True,
     )
 
 
