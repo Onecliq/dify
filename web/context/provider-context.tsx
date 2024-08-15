@@ -61,9 +61,9 @@ const ProviderContext = createContext<ProviderContextState>({
   isFetchedPlan: false,
   enableBilling: false,
   onPlanInfoChanged: () => { },
-  enableReplaceWebAppLogo: false,
-  modelLoadBalancingEnabled: false,
-  datasetOperatorEnabled: false,
+  enableReplaceWebAppLogo: true,
+  modelLoadBalancingEnabled: true,
+  datasetOperatorEnabled: true,
 })
 
 export const useProviderContext = () => useContext(ProviderContext)
@@ -88,9 +88,9 @@ export const ProviderContextProvider = ({
   const [plan, setPlan] = useState(defaultPlan)
   const [isFetchedPlan, setIsFetchedPlan] = useState(false)
   const [enableBilling, setEnableBilling] = useState(true)
-  const [enableReplaceWebAppLogo, setEnableReplaceWebAppLogo] = useState(false)
-  const [modelLoadBalancingEnabled, setModelLoadBalancingEnabled] = useState(false)
-  const [datasetOperatorEnabled, setDatasetOperatorEnabled] = useState(false)
+  const [enableReplaceWebAppLogo, setEnableReplaceWebAppLogo] = useState(true)
+  const [modelLoadBalancingEnabled, setModelLoadBalancingEnabled] = useState(true)
+  const [datasetOperatorEnabled, setDatasetOperatorEnabled] = useState(true)
 
   const fetchPlan = async () => {
     const data = await fetchCurrentPlanInfo()
