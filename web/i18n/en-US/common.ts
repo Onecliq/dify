@@ -199,6 +199,7 @@ const translation = {
     datasetOperatorTip: 'Only can manage the knowledge base',
     inviteTeamMember: 'Add team member',
     inviteTeamMemberTip: 'They can access your team data directly after signing in.',
+    emailNotSetup: 'Email server is not set up, so invitation emails cannot be sent. Please notify users of the invitation link that will be issued after invitation instead.',
     email: 'Email',
     emailInvalid: 'Invalid Email Format',
     emailPlaceholder: 'Please input emails',
@@ -363,7 +364,7 @@ const translation = {
     deprecated: 'Deprecated',
     confirmDelete: 'Confirm deletion?',
     quotaTip: 'Remaining available free tokens',
-    loadPresets: 'Load Presents',
+    loadPresets: 'Load Presets',
     parameters: 'PARAMETERS',
     loadBalancing: 'Load balancing',
     loadBalancingDescription: 'Reduce pressure with multiple sets of credentials.',
@@ -594,6 +595,9 @@ const translation = {
   license: {
     expiring: 'Expiring in one day',
     expiring_plural: 'Expiring in {{count}} days',
+  },
+  pagination: {
+    perPage: 'Items per page',
   },
 }
 
